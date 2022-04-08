@@ -10,6 +10,10 @@
   import DestinationOptions from "./components/DestinationOptions.svelte";
   import DestinationDescription from "./components/DestinationDescription.svelte";
   import DestinationMetrics from "./components/DestinationMetrics.svelte";
+
+  import CrewImg from "./components/CrewImg.svelte";
+  import CrewOptions from "./components/CrewOptions.svelte";
+  import CrewDescription from "./components/CrewDescription.svelte";
 </script>
 
 <svelte:head>
@@ -46,6 +50,21 @@
 
     <div class="mt-8 space-y-8">
       <DestinationMetrics />
+    </div>
+  </section>
+
+  <section
+    class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14"
+  >
+    <Background section="destination" />
+    <ProgressTracker step="02" />
+
+    <div class="mt-8 flex flex-col items-center text-brand-white">
+      <CrewImg crew="douglas_hurley" />
+      <div class="flex space-x-6 mt-7">
+        <CrewOptions />
+      </div>
+      <CrewDescription />
     </div>
   </section>
 </main>

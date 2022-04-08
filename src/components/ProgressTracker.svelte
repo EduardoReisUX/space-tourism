@@ -8,11 +8,15 @@
     "02": "MEET YOUR CREW",
     "03": "SPACE LAUNCH 101",
   };
+
+  let displayStep = Object.keys(stepIndicator).find(
+    (key) => stepIndicator[key] === stepIndicator[step]
+  );
 </script>
 
 {#if step}
   <p class="text-nav text-brand-white font-mono">
-    <span class="mr-4 font-bold text-brand-primary/50">01</span>PICK YOUR
-    DESTINATION
+    <span class="mr-4 font-bold text-brand-primary/50">{displayStep}</span
+    >{stepIndicator[step]}
   </p>
 {/if}
