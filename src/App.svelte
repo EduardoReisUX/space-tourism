@@ -14,6 +14,10 @@
   import CrewImg from "./components/CrewImg.svelte";
   import CrewOptions from "./components/CrewOptions.svelte";
   import CrewDescription from "./components/CrewDescription.svelte";
+
+  import TechImages from "./components/TechImages.svelte";
+  import TechOptions from "./components/TechOptions.svelte";
+  import TechDescription from "./components/TechDescription.svelte";
 </script>
 
 <svelte:head>
@@ -56,7 +60,7 @@
   <section
     class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14"
   >
-    <Background section="destination" />
+    <Background section="crew" />
     <ProgressTracker step="02" />
 
     <div class="mt-8 flex flex-col items-center text-brand-white">
@@ -65,6 +69,21 @@
         <CrewOptions />
       </div>
       <CrewDescription />
+    </div>
+  </section>
+
+  <section
+    class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14"
+  >
+    <Background section="techBg" />
+    <ProgressTracker step="03" />
+
+    <div class="mt-8 flex flex-col items-center text-brand-white">
+      <TechImages technology="launch_vehicle" />
+      <div class="flex space-x-6 mt-7">
+        <TechOptions />
+      </div>
+      <TechDescription />
     </div>
   </section>
 </main>
