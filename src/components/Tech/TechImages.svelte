@@ -1,7 +1,7 @@
 <script lang="ts">
-  import launch_vehicle from "./../assets/technology/image-launch-vehicle-landscape.jpg";
-  import spaceport from "./../assets/technology/image-space-capsule-landscape.jpg";
-  import space_capsule from "./../assets/technology/image-spaceport-landscape.jpg";
+  import launch_vehicle from "./../../assets/technology/image-launch-vehicle-landscape.jpg";
+  import spaceport from "./../../assets/technology/image-space-capsule-landscape.jpg";
+  import space_capsule from "./../../assets/technology/image-spaceport-landscape.jpg";
 
   type TechImagesType = keyof typeof techImages;
 

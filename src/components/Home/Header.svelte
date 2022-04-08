@@ -1,6 +1,6 @@
 <script lang="ts">
-  import logo from "./../assets/shared/logo.svg";
-  import openMenu from "./../assets/shared/icon-hamburger.svg";
+  import logo from "./../../assets/shared/logo.svg";
+  import openMenu from "./../../assets/shared/icon-hamburger.svg";
 </script>
 
 <header class="min-w-full">

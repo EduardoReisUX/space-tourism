@@ -1,8 +1,8 @@
 <script lang="ts">
-  import homeBg from "./../assets/home/background-home-mobile.jpg";
-  import destinationBg from "./../assets/destination/background-destination-mobile.jpg";
-  import crewBg from "./../assets/crew/background-crew-mobile.jpg";
-  import techBg from "./../assets/technology/background-technology-mobile.jpg";
+  import homeBg from "./../../assets/home/background-home-mobile.jpg";
+  import destinationBg from "./../../assets/destination/background-destination-mobile.jpg";
+  import crewBg from "./../../assets/crew/background-crew-mobile.jpg";
+  import techBg from "./../../assets/technology/background-technology-mobile.jpg";
 
   type BackgroundType = keyof typeof backgrounds;
 
