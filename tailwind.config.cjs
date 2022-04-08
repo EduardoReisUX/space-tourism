@@ -17,7 +17,7 @@ module.exports = {
       nav: [
         "16px",
         {
-          letterSpacing: "2.7",
+          letterSpacing: "2.7px",
         },
       ],
       body: "18px",
