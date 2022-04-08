@@ -39,7 +39,18 @@ module.exports = {
       h2: "100px",
       h1: "150px",
     },
-    extend: {},
+
+    extend: {
+      keyframes: {
+        hovering: {
+          "0%, 100%": { transform: "translateY(8px)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+      },
+      animation: {
+        hover: "hovering 4s infinite ease-in-out",
+      },
+    },
   },
   plugins: [],
 };
