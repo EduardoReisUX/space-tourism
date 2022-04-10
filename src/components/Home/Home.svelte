@@ -6,11 +6,15 @@
 </script>
 
 <section
-  class="relative min-h-screen flex flex-col px-6 mx-auto items-center pb-12"
+  class="relative min-h-screen flex flex-col px-6 mx-auto items-center pb-12 
+  md:w-full"
 >
   <Background section="home" />
   <Header />
-  <div class="space-y-20 mt-12 flex flex-col items-center">
+  <div
+    class="space-y-20 mt-12 flex flex-col items-center
+    md:space-y-40"
+  >
     <Hero />
     <ExploreButton />
   </div>
