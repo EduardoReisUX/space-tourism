@@ -20,6 +20,7 @@
   <img
     src={destinationImages[destination]}
     alt={"destination"}
-    class="w-[170px] h-[170px] animate-hover"
+    class="w-[170px] h-[170px] animate-hover
+    md:w-[300px] md:h-[300px]"
   />
 {/if}

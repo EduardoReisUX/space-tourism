@@ -9,22 +9,21 @@
 </script>
 
 <section
-  class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14"
+  class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14
+  md:items-start"
+  id="destination"
 >
   <Background section="destination" />
   <ProgressTracker step="01" />
 
   <div
-    class="mt-8 flex flex-col items-center text-brand-white border-b border-brand-white pb-8"
+    class="mt-8 flex flex-col items-center text-brand-white border-b border-brand-white pb-8
+    md:px-24 md:mt-16 md:pb-12"
   >
     <DestinationImg destination="moon" />
-    <div class="flex space-x-6 mt-7">
-      <DestinationOptions />
-    </div>
+    <DestinationOptions />
     <DestinationDescription />
   </div>
 
-  <div class="mt-8 space-y-8">
-    <DestinationMetrics />
-  </div>
+  <DestinationMetrics />
 </section>

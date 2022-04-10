@@ -9,14 +9,14 @@
     "03": "SPACE LAUNCH 101",
   };
 
-  let displayStep = Object.keys(stepIndicator).find(
+  let stepNumber = Object.keys(stepIndicator).find(
     (key) => stepIndicator[key] === stepIndicator[step]
   );
 </script>
 
 {#if step}
-  <p class="text-nav text-brand-white font-mono">
-    <span class="mr-4 font-bold text-brand-primary/50">{displayStep}</span
+  <p class="text-nav text-brand-white font-mono md:text-[20px]">
+    <span class="mr-4 font-bold text-brand-primary/25">{stepNumber}</span
     >{stepIndicator[step]}
   </p>
 {/if}
