@@ -8,16 +8,18 @@
 </script>
 
 <section
-  class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14"
+  class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14
+  md:items-start"
 >
   <Background section="crew" />
   <ProgressTracker step="02" />
 
-  <div class="mt-8 flex flex-col items-center text-brand-white">
+  <div
+    class="mt-8 flex flex-col items-center text-brand-white 
+  md:flex-col-reverse"
+  >
     <CrewImg crew="douglas_hurley" />
-    <div class="flex space-x-6 mt-7">
-      <CrewOptions />
-    </div>
+    <CrewOptions />
     <CrewDescription />
   </div>
 </section>

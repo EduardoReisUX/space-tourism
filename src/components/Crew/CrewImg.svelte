@@ -20,6 +20,7 @@
   <img
     src={crewImages[crew]}
     alt={"crew"}
-    class="w-[327px] h-[223px] object-contain border-b border-b-brand-white/10"
+    class="w-[327px] h-[223px] object-contain border-b border-b-brand-white/10
+    md:w-[539px] md:h-[532px]"
   />
 {/if}
