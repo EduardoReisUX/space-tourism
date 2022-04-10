@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Background from "./shared/Background.svelte";
-  import ProgressTracker from "./shared/ProgressTracker.svelte";
+  import Background from "./../shared/Background.svelte";
+  import ProgressTracker from "./../shared/ProgressTracker.svelte";
   import TechDescription from "./TechDescription.svelte";
   import TechImages from "./TechImages.svelte";
   import TechOptions from "./TechOptions.svelte";
@@ -13,10 +13,8 @@
   <ProgressTracker step="03" />
 
   <div class="mt-8 flex flex-col items-center text-brand-white">
-    <TechImages technology="launch_vehicle" />
-    <div class="flex space-x-6 mt-7">
-      <TechOptions />
-    </div>
+    <TechImages />
+    <TechOptions />
     <TechDescription />
   </div>
 </section>

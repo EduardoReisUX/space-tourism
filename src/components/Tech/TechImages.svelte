@@ -1,22 +1,20 @@
 <script lang="ts">
+  import { selectedTechnology } from "../../stores/selectedTech";
+
   import launch_vehicle from "./../../assets/technology/image-launch-vehicle-landscape.jpg";
   import spaceport from "./../../assets/technology/image-space-capsule-landscape.jpg";
   import space_capsule from "./../../assets/technology/image-spaceport-landscape.jpg";
 
-  type TechImagesType = keyof typeof techImages;
-
-  export let technology: TechImagesType;
-
   let techImages = {
-    launch_vehicle,
-    spaceport,
-    space_capsule,
+    "1": launch_vehicle,
+    "2": spaceport,
+    "3": space_capsule,
   };
 </script>
 
-{#if technology}
+{#if $selectedTechnology}
   <img
-    src={techImages[technology]}
+    src={techImages[$selectedTechnology]}
     alt={"technology"}
     class="absolute w-full h-[170px] object-cover"
   />
