@@ -25,7 +25,7 @@
 
     <div
       class="flex flex-col items-center text-center 
-    lg:items-start lg:text-left lg:max-w-[445px]"
+      lg:items-start lg:text-left lg:max-w-[445px]"
     >
       <DestinationOptions />
       <DestinationDescription />

@@ -9,17 +9,27 @@
 
 <section
   class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14
-  md:items-start"
+  md:items-start lg:pt-[212px]"
+  id="crew"
 >
   <Background section="crew" />
-  <ProgressTracker step="02" />
+  <div class="max-w-screen-xl mx-auto">
+    <ProgressTracker step="02" />
 
-  <div
-    class="mt-8 flex flex-col items-center text-brand-white 
-  md:flex-col-reverse"
-  >
-    <CrewImg crew="douglas_hurley" />
-    <CrewOptions />
-    <CrewDescription />
+    <div
+      class="mt-8 flex flex-col items-center text-brand-white 
+    md:flex-col-reverse
+    lg:w-full lg:px-0 lg:flex-row-reverse lg:justify-between lg:gap-8"
+    >
+      <CrewImg crew="douglas_hurley" />
+
+      <div
+        class="flex flex-col items-center text-center 
+      lg:items-start lg:flex-col-reverse lg:gap-[120px]"
+      >
+        <CrewOptions />
+        <CrewDescription />
+      </div>
+    </div>
   </div>
 </section>
