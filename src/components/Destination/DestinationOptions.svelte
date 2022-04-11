@@ -1,6 +1,6 @@
 <div
   class="flex space-x-6 mt-7
-  md:space-x-9"
+  md:space-x-9 lg:mt-0"
 >
   {#each ["MOON", "MARS", "EUROPA", "TITAN"] as lua, index}
     {#if index === 0}

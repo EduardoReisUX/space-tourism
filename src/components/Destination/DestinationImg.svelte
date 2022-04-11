@@ -21,6 +21,7 @@
     src={destinationImages[destination]}
     alt={"destination"}
     class="w-[170px] h-[170px] animate-hover
-    md:w-[300px] md:h-[300px]"
+    md:w-[300px] md:h-[300px]
+    lg:w-[445px] lg:h-[445px]"
   />
 {/if}
