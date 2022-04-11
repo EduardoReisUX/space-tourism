@@ -22,16 +22,20 @@
     <SideDrawer {isDrawerOpen} {toggleSideDrawer} />
 
     <ul
-      class="hidden md:flex absolute right-0 top-0 space-x-6 px-12 bg-brand-white/5"
+      class="hidden md:flex absolute right-0 top-0 space-x-6 px-12 bg-brand-white/5
+      lg:backdrop-blur-md lg:space-x-12 lg:pl-[123px] lg:pr-[165px]"
     >
-      {#each ["home", "destination", "crew", "technology"] as section}
+      {#each ["home", "destination", "crew", "technology"] as section, index}
         <li
           class="py-10 border-b-4 border-brand-white/0 duration-150 hover:border-brand-white"
         >
           <a
             href={`#${section}`}
-            class="text-nav text-brand-white font-mono uppercase">{section}</a
+            class="text-nav text-brand-white font-mono uppercase"
           >
+            <span class="hidden lg:inline-block font-bold">0{index}</span>
+            {section}
+          </a>
         </li>
       {/each}
     </ul>

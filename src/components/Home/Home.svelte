@@ -13,7 +13,8 @@
   <Header />
   <div
     class="space-y-20 mt-12 flex flex-col items-center
-    md:space-y-40"
+    md:space-y-40
+    lg:w-full lg:flex-row lg:justify-around lg:mt-[251px]"
   >
     <Hero />
     <ExploreButton />

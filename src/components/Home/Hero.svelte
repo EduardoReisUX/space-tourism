@@ -1,10 +1,10 @@
 <div
   class="space-y-4 text-brand-primary text-center
-  md:space-y-0 md:w-min"
+  md:space-y-0 md:w-min lg:text-left"
 >
-  <span class="text-nav font-mono uppercase md:text-[20px]"
-    >SO, YOU WANT TO TRAVEL TO</span
-  >
+  <h5 class="text-nav font-mono uppercase md:text-[20px] lg:text-h5">
+    SO, YOU WANT TO TRAVEL TO
+  </h5>
   <h1 class="text-[80px] text-brand-white font-serif uppercase md:text-h1">
     SPACE
   </h1>
