@@ -17,7 +17,8 @@
     src={techImages[$selectedTechnology]}
     alt={"technology"}
     class="absolute w-full h-[170px] object-cover
-    md:h-[310px]"
+    md:h-[310px]
+    lg:w-[515px] lg:h-[527px] right-0"
   />
-  <div class="h-[170px] md:h-[310px]" />
+  <div class="h-[170px] md:h-[310px] lg:w-[515px] lg:h-[527px]" />
 {/if}

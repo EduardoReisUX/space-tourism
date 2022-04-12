@@ -18,14 +18,14 @@
 
     <div
       class="mt-8 flex flex-col items-center text-brand-white 
-    md:flex-col-reverse
-    lg:w-full lg:px-0 lg:flex-row-reverse lg:justify-between lg:gap-8"
+      md:flex-col-reverse
+      lg:w-full lg:px-0 lg:flex-row-reverse lg:justify-between lg:gap-8"
     >
       <CrewImg crew="douglas_hurley" />
 
       <div
         class="flex flex-col items-center text-center 
-      lg:items-start lg:flex-col-reverse lg:gap-[120px]"
+        lg:items-start lg:flex-col-reverse lg:gap-[120px]"
       >
         <CrewOptions />
         <CrewDescription />

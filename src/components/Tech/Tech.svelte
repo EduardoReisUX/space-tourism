@@ -8,17 +8,25 @@
 
 <section
   class="relative min-h-screen flex flex-col px-6 mx-auto items-center w-full pt-[5.5rem] pb-14
-  md:items-start"
+  md:items-start lg:pt-[212px]"
+  id="technology"
 >
   <Background section="techBg" />
-  <ProgressTracker step="03" />
 
-  <div
-    class="mt-8 flex flex-col items-center text-brand-white 
-  md:px-32"
-  >
-    <TechImages />
-    <TechOptions />
-    <TechDescription />
+  <div class="max-w-screen-xl mx-auto">
+    <ProgressTracker step="03" />
+
+    <div
+      class="mt-8 flex flex-col items-center text-brand-white 
+      md:px-32
+      lg:flex-row-reverse lg:px-0"
+    >
+      <TechImages />
+
+      <div class="lg:flex lg:space-x-20">
+        <TechOptions />
+        <TechDescription />
+      </div>
+    </div>
   </div>
 </section>
