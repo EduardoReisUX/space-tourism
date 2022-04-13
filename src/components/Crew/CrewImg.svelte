@@ -4,9 +4,9 @@
   import mark_shuttleworth from "./../../assets/crew/image-mark-shuttleworth.png";
   import victor_glover from "./../../assets/crew/image-victor-glover.png";
 
-  type CrewImagesType = keyof typeof crewImages;
-
-  export let crew: CrewImagesType;
+  import { selectedCrew } from "./../../stores/selectedCrew";
+  import { crewsData } from "./../../stores";
+  import { fade } from "svelte/transition";
 
   let crewImages = {
     douglas_hurley,
@@ -14,14 +14,25 @@
     mark_shuttleworth,
     victor_glover,
   };
+
+  $: value = $crewsData
+    .find(({ name }) => name === $selectedCrew)
+    .name.toLowerCase()
+    .replace(" ", "_");
 </script>
 
-{#if crew}
-  <img
-    src={crewImages[crew]}
-    alt={"crew"}
-    class="w-[327px] h-[223px] object-contain border-b border-b-brand-white/10
+<div
+  class="w-[327px] h-[223px] border-b border-b-brand-white/10
     md:w-[539px] md:h-[532px]
     lg:w-[453px] lg:h-[654px]"
-  />
-{/if}
+>
+  {#key $selectedCrew}
+    <img
+      src={crewImages[value]}
+      alt={"crew"}
+      class="w-full h-full object-contain"
+      in:fade={{ duration: 150, delay: 250 }}
+      out:fade={{ duration: 150 }}
+    />
+  {/key}
+</div>

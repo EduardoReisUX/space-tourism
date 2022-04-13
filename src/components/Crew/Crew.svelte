@@ -21,7 +21,7 @@
       md:flex-col-reverse
       lg:w-full lg:px-0 lg:flex-row-reverse lg:justify-between lg:gap-8"
     >
-      <CrewImg crew="douglas_hurley" />
+      <CrewImg />
 
       <div
         class="flex flex-col items-center text-center 

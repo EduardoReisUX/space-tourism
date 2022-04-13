@@ -1,13 +1,26 @@
+<script lang="ts">
+  import { selectedCrew } from "./../../stores/selectedCrew";
+  import { crewsData } from "./../../stores/index";
+
+  let crewsName = $crewsData.map(({ name }) => name);
+
+  function selectCrew(crewName: string) {
+    $selectedCrew = crewName;
+  }
+</script>
+
 <div class="flex space-x-6 mt-7 md:mb-10">
-  {#each [1, 2, 3, 4] as _, index}
-    {#if index === 0}
-      <button
-        class="w-[10px] h-[10px] bg-brand-white rounded-full lg:w-[15px] lg:h-[15px]"
-      />
-    {:else}
-      <button
-        class="w-[10px] h-[10px] bg-brand-white/25 rounded-full lg:w-[15px] lg:h-[15px]"
-      />
-    {/if}
+  {#each crewsName as crew}
+    <button
+      class="w-[10px] h-[10px] bg-brand-white/25 rounded-full duration-150 lg:w-[15px] lg:h-[15px]"
+      class:selected={$selectedCrew === crew}
+      on:click={() => selectCrew(crew)}
+    />
   {/each}
 </div>
+
+<style>
+  .selected {
+    @apply bg-brand-white;
+  }
+</style>
