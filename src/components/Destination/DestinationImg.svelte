@@ -1,27 +1,28 @@
 <script lang="ts">
-  import moon from "./../../assets/destination/image-moon.png";
-  import mars from "./../../assets/destination/image-mars.png";
-  import europa from "./../../assets/destination/image-europa.png";
-  import titan from "./../../assets/destination/image-titan.png";
+  import Moon from "./../../assets/destination/image-moon.png";
+  import Mars from "./../../assets/destination/image-mars.png";
+  import Europa from "./../../assets/destination/image-europa.png";
+  import Titan from "./../../assets/destination/image-titan.png";
 
-  type DestinationImagesType = keyof typeof destinationImages;
+  import { selectedDestination } from "./../../stores/selectedDestination";
 
-  export let destination: DestinationImagesType;
+  import { fade } from "svelte/transition";
 
-  let destinationImages = {
-    moon: moon,
-    mars: mars,
-    europa: europa,
-    titan: titan,
-  };
+  let destinationImages = { Moon, Mars, Europa, Titan };
 </script>
 
-{#if destination}
-  <img
-    src={destinationImages[destination]}
-    alt={"destination"}
-    class="w-[170px] h-[170px] animate-hover
+<div
+  class="w-[170px] h-[170px] animate-hover aspect-square flex overflow-hidden snap-mandatory scroll-smooth scroll-m-12 
     md:w-[300px] md:h-[300px]
     lg:w-[445px] lg:h-[445px]"
-  />
-{/if}
+>
+  {#key $selectedDestination}
+    <img
+      src={destinationImages[$selectedDestination]}
+      alt={"destination"}
+      class="aspect-square snap-start"
+      in:fade={{ duration: 150, delay: 250 }}
+      out:fade={{ duration: 150 }}
+    />
+  {/key}
+</div>

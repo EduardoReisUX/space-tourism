@@ -21,7 +21,7 @@
     md:px-24 md:mt-16 md:pb-12
     lg:w-full lg:px-0 lg:flex-row lg:justify-around lg:space-x-8"
   >
-    <DestinationImg destination="moon" />
+    <DestinationImg />
 
     <div
       class="flex flex-col items-center text-center 
