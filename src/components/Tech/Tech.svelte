@@ -13,7 +13,7 @@
 >
   <Background section="techBg" />
 
-  <div class="max-w-screen-xl mx-auto">
+  <div class="w-full md:max-w-screen-xl md:mx-auto">
     <ProgressTracker step="03" />
 
     <div
@@ -23,7 +23,7 @@
     >
       <TechImages />
 
-      <div class="lg:flex lg:space-x-20">
+      <div class="w-full lg:flex lg:space-x-20">
         <TechOptions />
         <TechDescription />
       </div>
