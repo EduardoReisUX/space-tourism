@@ -8,10 +8,10 @@
   export let toggleSideDrawer: () => void;
 </script>
 
-{#if !!isDrawerOpen}
-  <div
-    class="md:hidden flex flex-col items-end absolute top-0 right-0 h-screen bg-brand-primary/5 backdrop-blur-2xl"
-    transition:fly={{ opacity: 1, duration: 400, x: 200, easing: cubicInOut }}
+{#if isDrawerOpen}
+  <aside
+    class="md:hidden flex flex-col items-end fixed top-0 right-0 h-screen bg-brand-primary/5 backdrop-blur-2xl scroll-smooth"
+    in:fly={{ opacity: 1, duration: 400, x: 200, easing: cubicInOut }}
   >
     <header class="py-8 px-6">
       <button on:click={toggleSideDrawer}>
@@ -29,10 +29,13 @@
           >
           <a
             href={`#${section}`}
-            class="text-nav text-brand-white font-mono uppercase">{section}</a
+            class="text-nav text-brand-white font-mono uppercase"
+            on:click={toggleSideDrawer}
           >
+            {section}
+          </a>
         </li>
       {/each}
     </ul>
-  </div>
+  </aside>
 {/if}

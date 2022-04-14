@@ -22,7 +22,7 @@
 </script>
 
 <div
-  class="w-[327px] h-[223px] border-b border-b-brand-white/10
+  class="w-[320px] h-[223px] border-b border-b-brand-white/10
     md:w-[539px] md:h-[532px]
     lg:w-[453px] lg:h-[654px]"
 >

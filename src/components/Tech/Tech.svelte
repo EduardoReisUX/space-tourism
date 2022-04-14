@@ -1,6 +1,7 @@
 <script lang="ts">
   import Background from "./../shared/Background.svelte";
   import ProgressTracker from "./../shared/ProgressTracker.svelte";
+
   import TechDescription from "./TechDescription.svelte";
   import TechImages from "./TechImages.svelte";
   import TechOptions from "./TechOptions.svelte";

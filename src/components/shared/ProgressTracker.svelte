@@ -15,7 +15,9 @@
 </script>
 
 {#if step}
-  <p class="text-nav text-brand-white font-mono md:text-[20px] lg:text-h5">
+  <p
+    class="text-nav text-brand-white font-mono text-center md:text-left md:text-[20px] lg:text-h5"
+  >
     <span class="mr-4 font-bold text-brand-primary/25 lg:mr-7"
       >{stepNumber}</span
     >{stepIndicator[step]}

@@ -12,7 +12,7 @@
 </script>
 
 <div
-  class="w-[170px] h-[170px] animate-hover aspect-square flex overflow-hidden snap-mandatory scroll-smooth scroll-m-12 
+  class="w-[170px] h-[170px] animate-hover aspect-square 
     md:w-[300px] md:h-[300px]
     lg:w-[445px] lg:h-[445px]"
 >
@@ -20,7 +20,7 @@
     <img
       src={destinationImages[$selectedDestination]}
       alt={"destination"}
-      class="aspect-square snap-start"
+      class="aspect-square"
       in:fade={{ duration: 150, delay: 250 }}
       out:fade={{ duration: 150 }}
     />

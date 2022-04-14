@@ -15,3 +15,9 @@
   <Crew />
   <Tech />
 </main>
+
+<style global>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

@@ -8,7 +8,7 @@
 {#key displayCrew}
   <div class="text-center md:px-32 lg:text-left lg:px-0">
     <h5
-      class="mt-8 mb-2 text-nav font-serif text-brand-white/50
+      class="mt-8 mb-2 text-nav font-serif text-brand-white/50 uppercase
     md:text-[24px] lg:text-h4"
     >
       {displayCrew.role}
