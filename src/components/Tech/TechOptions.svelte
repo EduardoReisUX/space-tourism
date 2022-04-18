@@ -14,6 +14,7 @@
   {#each $technologiesData as _, index}
     <button
       class="w-10 h-10 grid place-items-center border border-brand-white/25 font-serif rounded-full duration-150
+      hover:border-brand-white
       md:h-[60px] md:w-[60px] md:text-[24px]
       lg:h-[80px] lg:w-[80px] lg:text-h4"
       class:selected={$selectedTechnology === index + 1}
@@ -24,7 +25,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   .selected {
     @apply bg-brand-white text-brand-black border-0;
   }

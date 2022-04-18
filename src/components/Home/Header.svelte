@@ -32,7 +32,7 @@
     >
       {#each ["home", "destination", "crew", "technology"] as section, index}
         <li
-          class="py-10 border-b-4 border-brand-white/0 duration-150 hover:border-brand-white"
+          class="py-10 border-b-4 border-brand-white/0 duration-150 hover:border-brand-white/50"
         >
           <a
             href={`#${section}`}

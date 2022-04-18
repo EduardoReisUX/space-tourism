@@ -25,9 +25,9 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   .selected {
-    @apply border-brand-white text-brand-white border-brand-white;
+    @apply border-brand-white text-brand-white;
   }
 
   .selected:hover {
