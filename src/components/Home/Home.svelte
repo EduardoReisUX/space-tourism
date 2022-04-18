@@ -7,7 +7,7 @@
 
 <section
   class="relative min-h-screen flex flex-col px-6 mx-auto items-center pb-12 
-  md:w-full"
+  md:w-full md:px-0"
   id="#home"
 >
   <Background section="home" />

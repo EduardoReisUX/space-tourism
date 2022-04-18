@@ -10,7 +10,7 @@
 
 {#if isDrawerOpen}
   <aside
-    class="md:hidden flex flex-col items-end fixed top-0 right-0 h-screen bg-brand-primary/5 backdrop-blur-2xl scroll-smooth"
+    class="md:hidden flex flex-col items-end fixed top-0 right-0 z-50 h-screen bg-brand-primary/5 backdrop-blur-2xl scroll-smooth"
     in:fly={{ opacity: 1, duration: 400, x: 200, easing: cubicInOut }}
   >
     <header class="py-8 px-6">
